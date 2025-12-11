@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Play – Football Trivia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100 flex flex-col">
+    <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-10">
+      <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-2">
+          <div class="h-8 w-8 rounded-xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-slate-950 font-black text-xs">
+            TQ
+          </div>
+          <div>
+            <h1 class="text-xl font-semibold tracking-tight">Football Trivia</h1>
+            <p class="text-xs text-slate-400">Test Your Knowledge</p>
+          </div>
+        </a>
+        <div class="flex items-center gap-3 text-xs text-slate-400">
+          <span class="inline-flex h-2 w-2 rounded-full bg-amber-400 animate-pulse"></span>
+          <span>In game</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-1 flex items-center justify-center px-4 pb-10 pt-6">
+      <div class="w-full max-w-2xl space-y-6">
+        <!-- Score and Status -->
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+          <div id="score" class="text-lg font-semibold text-amber-400">Score: 0</div>
+          <div class="flex items-center gap-3 text-sm text-slate-300">
+            <span id="streak">Streak: 0</span>
+            <span id="best-streak" class="hidden sm:inline text-slate-400">Best: 0</span>
+          </div>
+          <div class="flex items-center gap-2 text-xs">
+            <span id="progress" class="rounded-full border border-slate-700 px-3 py-1 text-slate-300">Loading…</span>
+            <span id="difficulty" class="px-3 py-1 rounded-full border border-slate-700 text-slate-300"></span>
+          </div>
+        </div>
+
+        <!-- Status Message -->
+        <div id="status" class="text-sm text-slate-300 min-h-[1.5rem] text-center"></div>
+
+        <!-- Question Card -->
+        <article class="rounded-3xl border border-slate-800 bg-slate-900/80 overflow-hidden shadow-lg shadow-amber-500/10">
+          <div class="p-6 space-y-4">
+            <!-- Question Category and Text -->
+            <div class="space-y-2">
+              <p id="category" class="text-xs uppercase tracking-[0.2em] text-amber-400 font-semibold">Category</p>
+              <h2 id="question-text" class="text-lg sm:text-xl font-semibold tracking-tight leading-relaxed">
+                Question text will appear here
+              </h2>
+            </div>
+
+            <!-- Answer Options Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4">
+              <!-- Option A -->
+              <button
+                id="option-a"
+                class="option-btn group relative rounded-2xl border border-slate-700 bg-slate-800/50 p-4 text-left transition hover:bg-slate-800 hover:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-slate-950"
+                data-option="A"
+              >
+                <span class="text-xs font-semibold text-amber-400 block mb-1">A</span>
+                <span id="option-a-text" class="text-sm text-slate-100">Option A</span>
+              </button>
+
+              <!-- Option B -->
+              <button
+                id="option-b"
+                class="option-btn group relative rounded-2xl border border-slate-700 bg-slate-800/50 p-4 text-left transition hover:bg-slate-800 hover:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-slate-950"
+                data-option="B"
+              >
+                <span class="text-xs font-semibold text-amber-400 block mb-1">B</span>
+                <span id="option-b-text" class="text-sm text-slate-100">Option B</span>
+              </button>
+
+              <!-- Option C -->
+              <button
+                id="option-c"
+                class="option-btn group relative rounded-2xl border border-slate-700 bg-slate-800/50 p-4 text-left transition hover:bg-slate-800 hover:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-slate-950"
+                data-option="C"
+              >
+                <span class="text-xs font-semibold text-amber-400 block mb-1">C</span>
+                <span id="option-c-text" class="text-sm text-slate-100">Option C</span>
+              </button>
+
+              <!-- Option D -->
+              <button
+                id="option-d"
+                class="option-btn group relative rounded-2xl border border-slate-700 bg-slate-800/50 p-4 text-left transition hover:bg-slate-800 hover:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-slate-950"
+                data-option="D"
+              >
+                <span class="text-xs font-semibold text-amber-400 block mb-1">D</span>
+                <span id="option-d-text" class="text-sm text-slate-100">Option D</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Controls -->
+        <div class="flex items-center justify-between text-xs text-slate-500">
+          <a href="/" class="inline-flex items-center gap-1 rounded-full border border-slate-700 px-3 py-1 text-[11px] font-medium hover:border-slate-500 hover:bg-slate-900 transition">
+            ← Back to menu
+          </a>
+          <button
+            id="refresh"
+            class="inline-flex items-center gap-1 rounded-full border border-slate-700 px-3 py-1 text-[11px] font-medium hover:border-slate-500 hover:bg-slate-900 transition"
+          >
+            <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span>
+            New game
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- End-of-Game Overlay -->
+    <div id="end-screen" class="fixed inset-0 bg-slate-950/90 backdrop-blur-xl flex items-center justify-center px-4 py-8 hidden">
+      <div class="max-w-md w-full rounded-3xl border border-amber-500/40 bg-slate-900/80 shadow-2xl shadow-amber-500/20 p-6 space-y-5 text-center">
+        <div class="inline-flex items-center gap-2 rounded-full border border-amber-500/40 bg-amber-500/10 px-3 py-1 text-xs text-amber-300">
+          <span class="h-1.5 w-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+          <span>Full-time whistle</span>
+        </div>
+        <div class="space-y-2">
+          <h2 class="text-2xl font-semibold">Match Stats</h2>
+          <p id="final-score" class="text-amber-300 text-lg font-semibold">Score: 0</p>
+          <p id="final-streak" class="text-slate-300 text-sm">Best streak: 0</p>
+          <p class="text-sm text-slate-400">You answered all available questions. Fancy another round?</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <button id="play-again" class="rounded-full bg-amber-500 text-slate-950 font-semibold py-2.5 hover:bg-amber-400 transition">Play again</button>
+          <a href="/" class="rounded-full border border-slate-700 text-slate-200 py-2.5 hover:border-slate-500 hover:bg-slate-800 transition">Back to menu</a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="border-t border-slate-800 bg-slate-950/90">
+      <div class="max-w-5xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-slate-400">
+        <div>
+          <p class="font-medium text-slate-200">Student project · Football Trivia Game</p>
+          <p class="mt-1 max-w-xl">
+            Answer football trivia questions and build your streak. Each correct answer adds to your score!
+          </p>
+        </div>
+        <div class="text-right space-y-1">
+          <p class="text-[11px] uppercase tracking-[0.18em] text-slate-500">About</p>
+          <p>Student of <span class="font-medium text-slate-200">UFAZ Baku</span></p>
+          <p class="text-slate-500">French-Azerbaijani University · Baku</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const API_BASE = '';
+
+      let currentQuestion = null;
+      let score = 0;
+      let streak = 0;
+      let bestStreak = 0;
+      let isLocked = false;
+      let totalQuestions = 0;
+      let askedIds = new Set();
+      let gameOver = false;
+
+      const scoreEl = document.getElementById('score');
+      const streakEl = document.getElementById('streak');
+      const bestStreakEl = document.getElementById('best-streak');
+      const statusEl = document.getElementById('status');
+      const difficultyEl = document.getElementById('difficulty');
+      const progressEl = document.getElementById('progress');
+
+      const categoryEl = document.getElementById('category');
+      const questionEl = document.getElementById('question-text');
+      const optionABtn = document.getElementById('option-a');
+      const optionBBtn = document.getElementById('option-b');
+      const optionCBtn = document.getElementById('option-c');
+      const optionDBtn = document.getElementById('option-d');
+
+      const optionAText = document.getElementById('option-a-text');
+      const optionBText = document.getElementById('option-b-text');
+      const optionCText = document.getElementById('option-c-text');
+      const optionDText = document.getElementById('option-d-text');
+
+      const optionButtons = document.querySelectorAll('.option-btn');
+      const refreshBtn = document.getElementById('refresh');
+
+  const endScreen = document.getElementById('end-screen');
+  const finalScoreEl = document.getElementById('final-score');
+  const finalStreakEl = document.getElementById('final-streak');
+  const playAgainBtn = document.getElementById('play-again');
+
+      function clearHighlights() {
+        optionButtons.forEach(btn => {
+          btn.classList.remove('ring-2', 'ring-emerald-500', 'ring-red-500', 'ring-offset-2', 'ring-offset-slate-950');
+          btn.classList.remove('bg-emerald-500/20', 'bg-red-500/20');
+        });
+        statusEl.classList.remove('text-emerald-400', 'text-red-400');
+      }
+
+      async function fetchQuestionCount() {
+        const res = await fetch(`${API_BASE}/api/trivia/count`);
+        if (!res.ok) throw new Error('Failed to load question count');
+        const data = await res.json();
+        totalQuestions = data.total_questions || 0;
+        updateProgress();
+      }
+
+      async function fetchRandomQuestion() {
+        if (gameOver) return;
+
+        if (totalQuestions && askedIds.size >= totalQuestions) {
+          return endGame();
+        }
+
+        lockUI(true);
+        clearHighlights();
+        statusEl.textContent = 'Loading question...';
+
+        try {
+          const excludeParam = askedIds.size ? `?exclude=${[...askedIds].join(',')}` : '';
+          const res = await fetch(`${API_BASE}/api/trivia/question${excludeParam}`);
+          if (!res.ok) {
+            if (res.status === 404) {
+              return endGame();
+            }
+            throw new Error(`API error: ${res.status}`);
+          }
+          const data = await res.json();
+          if (!data.question) {
+            throw new Error('Unexpected response format');
+          }
+          currentQuestion = data.question;
+          askedIds.add(currentQuestion.id);
+          updateProgress();
+          renderQuestion();
+          statusEl.textContent = 'Choose the correct answer!';
+        } catch (err) {
+          console.error(err);
+          statusEl.textContent = 'Failed to load question.';
+          statusEl.classList.add('text-red-400');
+        } finally {
+          lockUI(false);
+        }
+      }
+
+      function renderQuestion() {
+        categoryEl.textContent = currentQuestion.category;
+        questionEl.textContent = currentQuestion.question_text;
+        optionAText.textContent = currentQuestion.option_a;
+        optionBText.textContent = currentQuestion.option_b;
+        optionCText.textContent = currentQuestion.option_c;
+        optionDText.textContent = currentQuestion.option_d;
+        difficultyEl.textContent = currentQuestion.difficulty.toUpperCase();
+      }
+
+      function lockUI(locked) {
+        isLocked = locked;
+        const method = locked ? 'add' : 'remove';
+        optionButtons.forEach(btn => {
+          btn.classList[method]('opacity-60', 'pointer-events-none');
+        });
+      }
+
+      async function sendAnswer(selectedOption) {
+        if (!currentQuestion || isLocked) return;
+        lockUI(true);
+        clearHighlights();
+        statusEl.textContent = 'Checking your answer...';
+
+        try {
+          const res = await fetch(`${API_BASE}/api/trivia/verify`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              question_id: currentQuestion.id,
+              selected_answer: selectedOption,
+            }),
+          });
+          if (!res.ok) {
+            throw new Error(`API error: ${res.status}`);
+          }
+          const data = await res.json();
+
+          // Find and highlight the buttons
+          const selectedBtn = document.querySelector(`[data-option="${selectedOption}"]`);
+          const correctBtn = document.querySelector(`[data-option="${data.correct_answer}"]`);
+
+          if (data.correct) {
+            score += 1;
+            streak += 1;
+            if (streak > bestStreak) {
+              bestStreak = streak;
+            }
+            statusEl.textContent = '✓ Correct! Great job.';
+            statusEl.classList.add('text-emerald-400');
+            selectedBtn.classList.add('ring-2', 'ring-emerald-500', 'ring-offset-2', 'ring-offset-slate-950', 'bg-emerald-500/20');
+          } else {
+            if (streak > bestStreak) {
+              bestStreak = streak;
+            }
+            streak = 0;
+            statusEl.textContent = '✗ Wrong. The correct answer was: ' + data.correct_answer;
+            statusEl.classList.add('text-red-400');
+            selectedBtn.classList.add('ring-2', 'ring-red-500', 'ring-offset-2', 'ring-offset-slate-950', 'bg-red-500/20');
+            correctBtn.classList.add('ring-2', 'ring-emerald-500', 'ring-offset-2', 'ring-offset-slate-950', 'bg-emerald-500/20');
+          }
+          scoreEl.textContent = `Score: ${score}`;
+          streakEl.textContent = `Streak: ${streak}`;
+          bestStreakEl.textContent = `Best: ${bestStreak}`;
+
+          setTimeout(fetchRandomQuestion, 1500);
+        } catch (err) {
+          console.error(err);
+          statusEl.textContent = 'Failed to verify answer.';
+          statusEl.classList.add('text-red-400');
+          lockUI(false);
+        }
+      }
+
+      optionButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const option = btn.getAttribute('data-option');
+          sendAnswer(option);
+        });
+      });
+
+      refreshBtn.addEventListener('click', () => {
+        resetGame();
+      });
+
+      playAgainBtn.addEventListener('click', () => {
+        resetGame();
+      });
+
+      function updateProgress() {
+        if (!totalQuestions) {
+          progressEl.textContent = 'Loading…';
+          return;
+        }
+        const currentNumber = Math.min(askedIds.size, totalQuestions) || 1;
+        progressEl.textContent = `Question ${currentNumber} / ${totalQuestions}`;
+      }
+
+      function endGame() {
+        gameOver = true;
+        lockUI(true);
+        statusEl.textContent = 'All questions answered!';
+        finalScoreEl.textContent = `Score: ${score} / ${totalQuestions}`;
+        finalStreakEl.textContent = `Best streak: ${bestStreak}`;
+        endScreen.classList.remove('hidden');
+      }
+
+      function resetGame() {
+        score = 0;
+        streak = 0;
+        bestStreak = 0;
+        askedIds = new Set();
+        gameOver = false;
+        endScreen.classList.add('hidden');
+        scoreEl.textContent = 'Score: 0';
+        streakEl.textContent = 'Streak: 0';
+        bestStreakEl.textContent = 'Best: 0';
+        statusEl.textContent = 'Loading question...';
+        fetchQuestionCount()
+          .then(fetchRandomQuestion)
+          .catch(() => {
+            statusEl.textContent = 'Failed to load questions.';
+            statusEl.classList.add('text-red-400');
+          });
+      }
+
+      // Start the game
+      resetGame();
+    </script>
+  </body>
+</html>
