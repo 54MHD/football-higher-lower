@@ -994,22 +994,18 @@ async def seed_questions():
 
     async with async_session_maker() as session:
         try:
-            # Check if questions already exist
-            from sqlalchemy import select
-            result = await session.execute(select(Question))
-            existing_questions = result.scalars().all()
+            from sqlalchemy import delete
+            import random
 
+            # Always reset to 20 random questions on startup
+            await session.execute(delete(Question))
 
-            # Insert sample questions
-            for question_data in SAMPLE_QUESTIONS:
-                question = Question(**question_data)
-                session.add(question)
+            selected = random.sample(SAMPLE_QUESTIONS, k=min(20, len(SAMPLE_QUESTIONS)))
+            for question_data in selected:
+                session.add(Question(**question_data))
 
             await session.commit()
-            print(f"Successfully seeded {len(SAMPLE_QUESTIONS)} questions!")
-
         except Exception as e:
-            print(f"Error seeding database: {e}")
             await session.rollback()
             raise
 
