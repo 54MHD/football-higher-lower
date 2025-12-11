@@ -1,18 +1,13 @@
+# Use an official Python runtime as a parent image
 FROM python:3.13-slim
-
-ENV PYTHONUNBUFFERED=1
+# Set the working directory inside the container
 WORKDIR /app
-
-COPY pyproject.toml uv.lock ./
-RUN pip install uv && uv sync --frozen
-
-COPY . .
-
-ENV DATABASE_URL=sqlite+aiosqlite:///./data/test.db
-RUN mkdir -p /app/data
-
-RUN uv run python -m app.db_init
-
-EXPOSE 8000
-
-CMD ["uv", "run", "gunicorn", "-k", "uvicorn.workers.UvicornWorker", "-b", "0.0.0.0:8000", "app.app:app"]
+# Copy the requirements file and install dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+# Copy the rest of the application’s code
+COPY ./src .
+# Expose the port the app runs on
+EXPOSE 5000
+# Define the command to run your app
+CMD ["python", "app.py"]
