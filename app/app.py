@@ -131,7 +131,7 @@ async def get_random_players(
         raise HTTPException(status_code=400, detail=str(exc)) from exc
 
 
-@app.post("/api/game/verify", response_model=VerifyResponse)
+@app.post("/api/games/verify", response_model=VerifyResponse)
 async def verify_game(
     payload: VerifyRequest,
     session: AsyncSession = Depends(get_async_session),
