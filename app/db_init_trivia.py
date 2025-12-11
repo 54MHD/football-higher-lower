@@ -999,9 +999,6 @@ async def seed_questions():
             result = await session.execute(select(Question))
             existing_questions = result.scalars().all()
 
-            if len(existing_questions) > 0:
-                print(f"Database already contains {len(existing_questions)} questions. Skipping seeding.")
-                return
 
             # Insert sample questions
             for question_data in SAMPLE_QUESTIONS:

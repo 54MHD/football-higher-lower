@@ -8,6 +8,7 @@ from app.schema import (
     CountResponse,
     QuestionOut,
     RandomQuestionResponse,
+    RandomQuestionsResponse,
     TriviaVerifyRequest,
     TriviaVerifyResponse,
 )
@@ -31,6 +32,22 @@ class TriviaService:
 
         return RandomQuestionResponse(
             question=TriviaService._to_question_out(question)
+        )
+
+    @staticmethod
+    async def get_random_questions(
+        session: AsyncSession,
+        limit: int = 20,
+    ) -> RandomQuestionsResponse:
+        query = select(Question).order_by(func.random()).limit(limit)
+        result = await session.execute(query)
+        questions = result.scalars().all()
+
+        if not questions:
+            raise ValueError("No questions in the database")
+
+        return RandomQuestionsResponse(
+            questions=[TriviaService._to_question_out(q) for q in questions]
         )
 
     @staticmethod

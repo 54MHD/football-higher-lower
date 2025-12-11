@@ -19,6 +19,7 @@ from .schema import (
     HealthResponse,
     RandomPlayersResponse,
     RandomQuestionResponse,
+    RandomQuestionsResponse,
     TriviaVerifyRequest,
     TriviaVerifyResponse,
     VerifyRequest,
@@ -155,6 +156,17 @@ async def get_random_question(
         if exclude:
             exclude_ids = [int(x) for x in exclude.split(",") if x.strip().isdigit()]
         return await TriviaService.get_random_question(session, exclude_ids)
+    except ValueError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+
+
+@app.get("/api/trivia/questions", response_model=RandomQuestionsResponse)
+async def get_random_questions(
+    limit: int = Query(default=20, ge=1, le=100, description="Number of random questions to return"),
+    session: AsyncSession = Depends(get_async_session),
+) -> RandomQuestionsResponse:
+    try:
+        return await TriviaService.get_random_questions(session, limit)
     except ValueError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
 

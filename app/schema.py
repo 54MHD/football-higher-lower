@@ -40,6 +40,9 @@ class QuestionOut(BaseModel):
 class RandomQuestionResponse(BaseModel):
     question: QuestionOut
 
+class RandomQuestionsResponse(BaseModel):
+    questions: List[QuestionOut]
+
 
 class TriviaVerifyRequest(BaseModel):
     question_id: int = Field(..., ge=1)
