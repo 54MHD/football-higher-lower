@@ -995,13 +995,11 @@ async def seed_questions():
     async with async_session_maker() as session:
         try:
             from sqlalchemy import delete
-            import random
 
-            # Always reset to 20 random questions on startup
+            # Reset and load all available questions (97 total)
             await session.execute(delete(Question))
 
-            selected = random.sample(SAMPLE_QUESTIONS, k=min(20, len(SAMPLE_QUESTIONS)))
-            for question_data in selected:
+            for question_data in SAMPLE_QUESTIONS:
                 session.add(Question(**question_data))
 
             await session.commit()

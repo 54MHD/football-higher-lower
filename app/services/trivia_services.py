@@ -54,7 +54,8 @@ class TriviaService:
     async def get_question_count(session: AsyncSession) -> CountResponse:
         result = await session.execute(select(func.count()).select_from(Question))
         total = result.scalar_one()
-        return CountResponse(total_questions=total)
+        game_limit = 20
+        return CountResponse(total_questions=min(total, game_limit))
 
     @staticmethod
     async def verify_answer(session: AsyncSession, payload: TriviaVerifyRequest) -> TriviaVerifyResponse:

@@ -10,9 +10,10 @@ import random
 from fastapi import Depends, FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, HTMLResponse
+from sqlalchemy import delete, func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from .db import get_async_session,create_db_and_tables
+from .db import Question, async_session_maker, get_async_session,create_db_and_tables
 from .db_init import init_db
 from .db_init_trivia import seed_questions
 from .schema import (
@@ -114,6 +115,22 @@ async def game_page() -> HTMLResponse:
 
 @app.get("/trivia", response_class=HTMLResponse)
 async def trivia_page() -> HTMLResponse:
+    try:
+        async with async_session_maker() as session:
+            # Select 20 random question IDs (DO NOT DELETE)
+            ids_result = await session.execute(
+                select(Question.id).order_by(func.random()).limit(20)
+            )
+            keep_ids = [row[0] for row in ids_result.all()]
+
+            # Store in app state (per server instance)
+            app.state.trivia_question_ids = keep_ids
+
+            logger.info("Selected 20 random trivia questions for this session")
+
+    except Exception as e:
+        logger.error(f"Error selecting trivia questions: {e}")
+
     root = Path(__file__).resolve().parents[1]
     frontend_path = root / "trivia.html"
     if frontend_path.exists():
