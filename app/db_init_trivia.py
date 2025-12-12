@@ -981,8 +981,1797 @@ SAMPLE_QUESTIONS = [
         "correct_answer": "A",
         "difficulty": "easy",
         "category": "Players"
-    }
-
+    },
+    {
+        "question_text": "Which club won the Champions League in 2012?",
+        "option_a": "Chelsea",
+        "option_b": "Bayern Munich",
+        "option_c": "Barcelona",
+        "option_d": "Real Madrid",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "Champions League"
+        },
+        {
+        "question_text": "Who captained Spain to World Cup victory in 2010?",
+        "option_a": "Xavi",
+        "option_b": "Casillas",
+        "option_c": "Puyol",
+        "option_d": "Ramos",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which club is nicknamed 'The Old Lady'?",
+        "option_a": "AC Milan",
+        "option_b": "Juventus",
+        "option_c": "Inter Milan",
+        "option_d": "Roma",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "Clubs"
+        },
+        {
+        "question_text": "Who won the Ballon d'Or in 2008?",
+        "option_a": "Messi",
+        "option_b": "Ronaldo",
+        "option_c": "Kaká",
+        "option_d": "Xavi",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "Awards"
+        },
+        {
+        "question_text": "Which country won the World Cup in 1970?",
+        "option_a": "Italy",
+        "option_b": "Brazil",
+        "option_c": "Germany",
+        "option_d": "England",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which club plays at the Santiago Bernabéu?",
+        "option_a": "Atletico Madrid",
+        "option_b": "Real Madrid",
+        "option_c": "Valencia",
+        "option_d": "Sevilla",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "Stadiums"
+        },
+        {
+        "question_text": "Who is Argentina's all-time top scorer?",
+        "option_a": "Batistuta",
+        "option_b": "Messi",
+        "option_c": "Maradona",
+        "option_d": "Aguero",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "Players"
+        },
+        {
+        "question_text": "Which team won the Premier League in 2015?",
+        "option_a": "Chelsea",
+        "option_b": "Manchester City",
+        "option_c": "Arsenal",
+        "option_d": "Liverpool",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "Premier League"
+        },
+        {
+        "question_text": "Who won the Golden Boot at the 2014 World Cup?",
+        "option_a": "Messi",
+        "option_b": "Müller",
+        "option_c": "James Rodríguez",
+        "option_d": "Neymar",
+        "correct_answer": "C",
+        "difficulty": "medium",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which club won Serie A in 2019?",
+        "option_a": "Inter Milan",
+        "option_b": "Juventus",
+        "option_c": "Napoli",
+        "option_d": "AC Milan",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "Serie A"
+        },
+        {
+        "question_text": "Which nation won Euro 2004?",
+        "option_a": "France",
+        "option_b": "Portugal",
+        "option_c": "Greece",
+        "option_d": "Italy",
+        "correct_answer": "C",
+        "difficulty": "medium",
+        "category": "Euro Cup"
+        },
+        {
+        "question_text": "Who is known as 'Il Capitano' at Roma?",
+        "option_a": "De Rossi",
+        "option_b": "Totti",
+        "option_c": "Maldini",
+        "option_d": "Pirlo",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Players"
+        },
+        {
+        "question_text": "Which club won the Europa League in 2018?",
+        "option_a": "Arsenal",
+        "option_b": "Chelsea",
+        "option_c": "Atletico Madrid",
+        "option_d": "Marseille",
+        "correct_answer": "C",
+        "difficulty": "medium",
+        "category": "Europa League"
+        },
+        {
+        "question_text": "Which country hosted Euro 2020?",
+        "option_a": "England",
+        "option_b": "Italy",
+        "option_c": "Multiple countries",
+        "option_d": "Germany",
+        "correct_answer": "C",
+        "difficulty": "medium",
+        "category": "Euro Cup"
+        },
+        {
+        "question_text": "Who won the FIFA Best Men's Player award in 2022?",
+        "option_a": "Messi",
+        "option_b": "Mbappé",
+        "option_c": "Benzema",
+        "option_d": "Haaland",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Awards"
+        },
+        {
+        "question_text": "Which club is nicknamed 'Los Blancos'?",
+        "option_a": "Real Madrid",
+        "option_b": "Barcelona",
+        "option_c": "Valencia",
+        "option_d": "Sevilla",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Clubs"
+        },
+        {
+        "question_text": "Which team won the 2018 World Cup?",
+        "option_a": "Croatia",
+        "option_b": "France",
+        "option_c": "Brazil",
+        "option_d": "Germany",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Who scored the winning goal in the Euro 2016 final?",
+        "option_a": "Ronaldo",
+        "option_b": "Griezmann",
+        "option_c": "Eder",
+        "option_d": "Pepe",
+        "correct_answer": "C",
+        "difficulty": "hard",
+        "category": "Euro Cup"
+        },
+        {
+        "question_text": "Which club did Neymar leave in 2017?",
+        "option_a": "PSG",
+        "option_b": "Barcelona",
+        "option_c": "Santos",
+        "option_d": "Real Madrid",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "Transfers"
+        },
+        {
+        "question_text": "Which team won La Liga in 2018?",
+        "option_a": "Real Madrid",
+        "option_b": "Atletico Madrid",
+        "option_c": "Barcelona",
+        "option_d": "Sevilla",
+        "correct_answer": "C",
+        "difficulty": "medium",
+        "category": "La Liga"
+        },
+        {
+        "question_text": "Who is Germany's all-time top scorer?",
+        "option_a": "Klose",
+        "option_b": "Müller",
+        "option_c": "Gerd Müller",
+        "option_d": "Podolski",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Players"
+        },
+        {
+        "question_text": "Which club won the Champions League in 2014?",
+        "option_a": "Atletico Madrid",
+        "option_b": "Barcelona",
+        "option_c": "Real Madrid",
+        "option_d": "Bayern Munich",
+        "correct_answer": "C",
+        "difficulty": "medium",
+        "category": "Champions League"
+        },
+        {
+        "question_text": "Which country won AFCON 2019?",
+        "option_a": "Senegal",
+        "option_b": "Nigeria",
+        "option_c": "Algeria",
+        "option_d": "Egypt",
+        "correct_answer": "C",
+        "difficulty": "medium",
+        "category": "AFCON"
+        },
+        {
+        "question_text": "Which club plays at Signal Iduna Park?",
+        "option_a": "RB Leipzig",
+        "option_b": "Bayern Munich",
+        "option_c": "Borussia Dortmund",
+        "option_d": "Schalke",
+        "correct_answer": "C",
+        "difficulty": "easy",
+        "category": "Stadiums"
+        },
+        {
+        "question_text": "Which country won the Copa América 2019?",
+        "option_a": "Argentina",
+        "option_b": "Brazil",
+        "option_c": "Chile",
+        "option_d": "Uruguay",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "Copa America"
+        },
+        {
+        "question_text": "Which club won Ligue 1 in 2022?",
+        "option_a": "PSG",
+        "option_b": "Marseille",
+        "option_c": "Lille",
+        "option_d": "Monaco",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Ligue 1"
+        },
+        {
+        "question_text": "Who is known as 'The Pharaoh'?",
+        "option_a": "Salah",
+        "option_b": "Hakimi",
+        "option_c": "Mahrez",
+        "option_d": "Ziyech",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Players"
+        },
+        {
+        "question_text": "Which country won the World Cup in 1966?",
+        "option_a": "Germany",
+        "option_b": "Brazil",
+        "option_c": "England",
+        "option_d": "Italy",
+        "correct_answer": "C",
+        "difficulty": "medium",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which club won the Champions League in 2017?",
+        "option_a": "Juventus",
+        "option_b": "Real Madrid",
+        "option_c": "Barcelona",
+        "option_d": "Atletico Madrid",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Champions League"
+        },
+        {
+        "question_text": "Which team won the Premier League in 2017?",
+        "option_a": "Chelsea",
+        "option_b": "Tottenham",
+        "option_c": "Manchester City",
+        "option_d": "Arsenal",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "Premier League"
+        },
+        {
+        "question_text": "Who won the Ballon d'Or in 2013?",
+        "option_a": "Messi",
+        "option_b": "Ronaldo",
+        "option_c": "Ribéry",
+        "option_d": "Iniesta",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Awards"
+        },
+        {
+        "question_text": "Which country won Euro 2012?",
+        "option_a": "Italy",
+        "option_b": "Spain",
+        "option_c": "Germany",
+        "option_d": "France",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Euro Cup"
+        },
+        {
+        "question_text": "Which club won the Europa League in 2019?",
+        "option_a": "Chelsea",
+        "option_b": "Arsenal",
+        "option_c": "Valencia",
+        "option_d": "Sevilla",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "Europa League"
+        },
+        {
+        "question_text": "Which club is nicknamed 'The Rossoneri'?",
+        "option_a": "AC Milan",
+        "option_b": "Inter Milan",
+        "option_c": "Juventus",
+        "option_d": "Napoli",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Clubs"
+        },
+        {
+        "question_text": "Who won the World Cup Golden Ball in 2018?",
+        "option_a": "Mbappé",
+        "option_b": "Modrić",
+        "option_c": "Messi",
+        "option_d": "Griezmann",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which country won the Copa América 2016?",
+        "option_a": "Chile",
+        "option_b": "Argentina",
+        "option_c": "Brazil",
+        "option_d": "Uruguay",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "Copa America"
+        },
+        {
+        "question_text": "Which club won Serie A in 2021?",
+        "option_a": "Juventus",
+        "option_b": "Inter Milan",
+        "option_c": "AC Milan",
+        "option_d": "Napoli",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "Serie A"
+        },
+        {
+        "question_text": "Which player won the Golden Boot at Euro 2020?",
+        "option_a": "Ronaldo",
+        "option_b": "Kane",
+        "option_c": "Lukaku",
+        "option_d": "Schick",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "Euro Cup"
+        },
+        {
+        "question_text": "Which club won the Champions League in 2016?",
+        "option_a": "Real Madrid",
+        "option_b": "Atletico Madrid",
+        "option_c": "Barcelona",
+        "option_d": "Juventus",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "Champions League"
+        },
+        {
+        "question_text": "Which country won the World Cup in 1958?",
+        "option_a": "Brazil",
+        "option_b": "Sweden",
+        "option_c": "Germany",
+        "option_d": "Italy",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which club won the FA Cup in 2021?",
+        "option_a": "Chelsea",
+        "option_b": "Arsenal",
+        "option_c": "Leicester City",
+        "option_d": "Manchester United",
+        "correct_answer": "C",
+        "difficulty": "medium",
+        "category": "FA Cup"
+        },
+        {
+        "question_text": "Who is France's all-time top scorer?",
+        "option_a": "Benzema",
+        "option_b": "Henry",
+        "option_c": "Giroud",
+        "option_d": "Mbappé",
+        "correct_answer": "C",
+        "difficulty": "easy",
+        "category": "Players"
+        },
+        {
+        "question_text": "Which club won the Champions League in 2015?",
+        "option_a": "Juventus",
+        "option_b": "Barcelona",
+        "option_c": "Real Madrid",
+        "option_d": "Bayern Munich",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Champions League"
+        },
+        {
+        "question_text": "Which country won the World Cup in 1994?",
+        "option_a": "Brazil",
+        "option_b": "Italy",
+        "option_c": "Germany",
+        "option_d": "Argentina",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which club is known as 'The Nerazzurri'?",
+        "option_a": "Inter Milan",
+        "option_b": "AC Milan",
+        "option_c": "Atalanta",
+        "option_d": "Roma",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Clubs"
+        },
+        {
+        "question_text": "Which player won the Ballon d'Or in 2018?",
+        "option_a": "Messi",
+        "option_b": "Ronaldo",
+        "option_c": "Modrić",
+        "option_d": "Griezmann",
+        "correct_answer": "C",
+        "difficulty": "medium",
+        "category": "Awards"
+        },
+        {
+        "question_text": "Which club won the Champions League in 2011?",
+        "option_a": "Manchester United",
+        "option_b": "Barcelona",
+        "option_c": "Inter Milan",
+        "option_d": "Real Madrid",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Champions League"
+        },
+        {
+        "question_text": "Which country won the World Cup in 2002?",
+        "option_a": "Germany",
+        "option_b": "Brazil",
+        "option_c": "Italy",
+        "option_d": "France",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which club is nicknamed 'The Foxes'?",
+        "option_a": "Leicester City",
+        "option_b": "Wolves",
+        "option_c": "Everton",
+        "option_d": "West Ham",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Clubs"
+        },
+        {
+        "question_text": "Who won the Ballon d'Or in 2006?",
+        "option_a": "Ronaldinho",
+        "option_b": "Cannavaro",
+        "option_c": "Zidane",
+        "option_d": "Kaká",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Awards"
+        },
+        {
+        "question_text": "Which country won Euro 1988?",
+        "option_a": "Germany",
+        "option_b": "Netherlands",
+        "option_c": "Italy",
+        "option_d": "France",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Euro Cup"
+        },
+        {
+        "question_text": "Which club plays at the San Siro?",
+        "option_a": "Juventus",
+        "option_b": "AC Milan",
+        "option_c": "Napoli",
+        "option_d": "Roma",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "Stadiums"
+        },
+        {
+        "question_text": "Who is Brazil's all-time top scorer?",
+        "option_a": "Romário",
+        "option_b": "Pelé",
+        "option_c": "Ronaldo",
+        "option_d": "Neymar",
+        "correct_answer": "D",
+        "difficulty": "medium",
+        "category": "Players"
+        },
+        {
+        "question_text": "Which team won the Premier League in 2022?",
+        "option_a": "Liverpool",
+        "option_b": "Chelsea",
+        "option_c": "Manchester City",
+        "option_d": "Arsenal",
+        "correct_answer": "C",
+        "difficulty": "easy",
+        "category": "Premier League"
+        },
+        {
+        "question_text": "Who won the Golden Boot at the 2006 World Cup?",
+        "option_a": "Klose",
+        "option_b": "Ronaldo",
+        "option_c": "Crespo",
+        "option_d": "Henry",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which club won Serie A in 2018?",
+        "option_a": "Juventus",
+        "option_b": "Napoli",
+        "option_c": "Inter Milan",
+        "option_d": "Roma",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Serie A"
+        },
+        {
+        "question_text": "Which nation won Euro 1996?",
+        "option_a": "Germany",
+        "option_b": "England",
+        "option_c": "France",
+        "option_d": "Italy",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "Euro Cup"
+        },
+        {
+        "question_text": "Who is known as 'El Pibe de Oro'?",
+        "option_a": "Messi",
+        "option_b": "Maradona",
+        "option_c": "Pelé",
+        "option_d": "Di María",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "Players"
+        },
+        {
+        "question_text": "Which club won the Europa League in 2020?",
+        "option_a": "Inter Milan",
+        "option_b": "Sevilla",
+        "option_c": "Manchester United",
+        "option_d": "Arsenal",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Europa League"
+        },
+        {
+        "question_text": "Which country hosted the 2014 World Cup?",
+        "option_a": "Brazil",
+        "option_b": "Russia",
+        "option_c": "Germany",
+        "option_d": "South Africa",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Who won the FIFA Best Men's Player award in 2021?",
+        "option_a": "Messi",
+        "option_b": "Lewandowski",
+        "option_c": "Ronaldo",
+        "option_d": "Mbappé",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Awards"
+        },
+        {
+        "question_text": "Which club is nicknamed 'Los Colchoneros'?",
+        "option_a": "Sevilla",
+        "option_b": "Valencia",
+        "option_c": "Atletico Madrid",
+        "option_d": "Villarreal",
+        "correct_answer": "C",
+        "difficulty": "medium",
+        "category": "Clubs"
+        },
+        {
+        "question_text": "Which team won the 2021 Copa América?",
+        "option_a": "Brazil",
+        "option_b": "Argentina",
+        "option_c": "Chile",
+        "option_d": "Uruguay",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "Copa America"
+        },
+        {
+        "question_text": "Who scored the winning goal in the 2014 World Cup final?",
+        "option_a": "Müller",
+        "option_b": "Götze",
+        "option_c": "Klose",
+        "option_d": "Kroos",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which club did Luis Suárez join in 2020?",
+        "option_a": "Barcelona",
+        "option_b": "Atletico Madrid",
+        "option_c": "Inter Miami",
+        "option_d": "Ajax",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Transfers"
+        },
+        {
+        "question_text": "Which team won La Liga in 2017?",
+        "option_a": "Real Madrid",
+        "option_b": "Barcelona",
+        "option_c": "Atletico Madrid",
+        "option_d": "Sevilla",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "La Liga"
+        },
+        {
+        "question_text": "Who is Italy's all-time top scorer?",
+        "option_a": "Del Piero",
+        "option_b": "Balotelli",
+        "option_c": "Immobile",
+        "option_d": "Riva",
+        "correct_answer": "D",
+        "difficulty": "hard",
+        "category": "Players"
+        },
+        {
+        "question_text": "Which club won the Champions League in 2010?",
+        "option_a": "Bayern Munich",
+        "option_b": "Inter Milan",
+        "option_c": "Barcelona",
+        "option_d": "Chelsea",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Champions League"
+        },
+        {
+        "question_text": "Which country won AFCON 2021?",
+        "option_a": "Egypt",
+        "option_b": "Senegal",
+        "option_c": "Algeria",
+        "option_d": "Cameroon",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "AFCON"
+        },
+        {
+        "question_text": "Which club plays at the Emirates Stadium?",
+        "option_a": "Chelsea",
+        "option_b": "Tottenham",
+        "option_c": "Arsenal",
+        "option_d": "West Ham",
+        "correct_answer": "C",
+        "difficulty": "easy",
+        "category": "Stadiums"
+        },
+        {
+        "question_text": "Which country won the Copa América 2011?",
+        "option_a": "Argentina",
+        "option_b": "Uruguay",
+        "option_c": "Brazil",
+        "option_d": "Chile",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Copa America"
+        },
+        {
+        "question_text": "Which club won Ligue 1 in 2021?",
+        "option_a": "PSG",
+        "option_b": "Lyon",
+        "option_c": "Lille",
+        "option_d": "Monaco",
+        "correct_answer": "C",
+        "difficulty": "medium",
+        "category": "Ligue 1"
+        },
+        {
+        "question_text": "Who is known as 'King Kenny'?",
+        "option_a": "Dalglish",
+        "option_b": "Gerrard",
+        "option_c": "Lampard",
+        "option_d": "Rooney",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "Players"
+        },
+        {
+        "question_text": "Which country won the World Cup in 1978?",
+        "option_a": "Brazil",
+        "option_b": "Germany",
+        "option_c": "Argentina",
+        "option_d": "Italy",
+        "correct_answer": "C",
+        "difficulty": "medium",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which club won the Champions League in 2013?",
+        "option_a": "Borussia Dortmund",
+        "option_b": "Bayern Munich",
+        "option_c": "Real Madrid",
+        "option_d": "Chelsea",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Champions League"
+        },
+        {
+        "question_text": "Which team won the Premier League in 2019?",
+        "option_a": "Manchester City",
+        "option_b": "Liverpool",
+        "option_c": "Chelsea",
+        "option_d": "Tottenham",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "Premier League"
+        },
+        {
+        "question_text": "Who won the Ballon d'Or in 2016?",
+        "option_a": "Messi",
+        "option_b": "Ronaldo",
+        "option_c": "Griezmann",
+        "option_d": "Suárez",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "Awards"
+        },
+        {
+        "question_text": "Which country won Euro 2020?",
+        "option_a": "England",
+        "option_b": "Italy",
+        "option_c": "France",
+        "option_d": "Portugal",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "Euro Cup"
+        },
+        {
+        "question_text": "Which club won the Europa League in 2021?",
+        "option_a": "Manchester United",
+        "option_b": "Villarreal",
+        "option_c": "Sevilla",
+        "option_d": "Roma",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Europa League"
+        },
+        {
+        "question_text": "Which club is nicknamed 'The Hammers'?",
+        "option_a": "West Ham United",
+        "option_b": "Fulham",
+        "option_c": "Brentford",
+        "option_d": "Crystal Palace",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Clubs"
+        },
+        {
+        "question_text": "Who won the Golden Ball at the 2014 World Cup?",
+        "option_a": "Messi",
+        "option_b": "Neymar",
+        "option_c": "Müller",
+        "option_d": "Robben",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which country won the Copa América 2007?",
+        "option_a": "Argentina",
+        "option_b": "Brazil",
+        "option_c": "Uruguay",
+        "option_d": "Paraguay",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Copa America"
+        },
+        {
+        "question_text": "Which club won Serie A in 2022?",
+        "option_a": "Inter Milan",
+        "option_b": "AC Milan",
+        "option_c": "Juventus",
+        "option_d": "Napoli",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "Serie A"
+        },
+        {
+        "question_text": "Which player won the Golden Boot at the 2018 World Cup?",
+        "option_a": "Mbappé",
+        "option_b": "Kane",
+        "option_c": "Griezmann",
+        "option_d": "Hazard",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which club won the Champions League in 2009?",
+        "option_a": "Manchester United",
+        "option_b": "Barcelona",
+        "option_c": "Chelsea",
+        "option_d": "AC Milan",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Champions League"
+        },
+        {
+        "question_text": "Which country won the World Cup in 1982?",
+        "option_a": "Italy",
+        "option_b": "Brazil",
+        "option_c": "Germany",
+        "option_d": "Argentina",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which club won the FA Cup in 2020?",
+        "option_a": "Chelsea",
+        "option_b": "Arsenal",
+        "option_c": "Manchester City",
+        "option_d": "Leicester City",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "FA Cup"
+        },
+        {
+        "question_text": "Who is Spain's all-time top scorer?",
+        "option_a": "Villa",
+        "option_b": "Torres",
+        "option_c": "Raúl",
+        "option_d": "Morata",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Players"
+        },
+        {
+        "question_text": "Which club won the Champions League in 2008?",
+        "option_a": "Chelsea",
+        "option_b": "Manchester United",
+        "option_c": "Barcelona",
+        "option_d": "AC Milan",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Champions League"
+        },
+        {
+        "question_text": "Which country won the World Cup in 1934?",
+        "option_a": "Italy",
+        "option_b": "Brazil",
+        "option_c": "Uruguay",
+        "option_d": "Germany",
+        "correct_answer": "A",
+        "difficulty": "hard",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which club is known as 'The Yellow Submarine'?",
+        "option_a": "Villarreal",
+        "option_b": "Valencia",
+        "option_c": "Las Palmas",
+        "option_d": "Cadiz",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Clubs"
+        },
+        {
+        "question_text": "Which club won the Champions League in 2007?",
+        "option_a": "AC Milan",
+        "option_b": "Liverpool",
+        "option_c": "Chelsea",
+        "option_d": "Manchester United",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "Champions League"
+        },
+        {
+        "question_text": "Which country won the World Cup in 1954?",
+        "option_a": "Hungary",
+        "option_b": "Germany",
+        "option_c": "Brazil",
+        "option_d": "Italy",
+        "correct_answer": "B",
+        "difficulty": "hard",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which club is nicknamed 'The Toffees'?",
+        "option_a": "Everton",
+        "option_b": "Leeds United",
+        "option_c": "Aston Villa",
+        "option_d": "Burnley",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Clubs"
+        },
+        {
+        "question_text": "Who won the Ballon d'Or in 1999?",
+        "option_a": "Rivaldo",
+        "option_b": "Beckham",
+        "option_c": "Figo",
+        "option_d": "Ronaldo",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "Awards"
+        },
+        {
+        "question_text": "Which country won Euro 1976?",
+        "option_a": "West Germany",
+        "option_b": "Czechoslovakia",
+        "option_c": "Netherlands",
+        "option_d": "Italy",
+        "correct_answer": "B",
+        "difficulty": "hard",
+        "category": "Euro Cup"
+        },
+        {
+        "question_text": "Which club plays at Stamford Bridge?",
+        "option_a": "Chelsea",
+        "option_b": "Arsenal",
+        "option_c": "Tottenham",
+        "option_d": "West Ham",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Stadiums"
+        },
+        {
+        "question_text": "Who is Portugal's all-time top scorer?",
+        "option_a": "Eusébio",
+        "option_b": "Ronaldo",
+        "option_c": "Figo",
+        "option_d": "Pauleta",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "Players"
+        },
+        {
+        "question_text": "Which team won the Premier League in 2014?",
+        "option_a": "Liverpool",
+        "option_b": "Chelsea",
+        "option_c": "Manchester City",
+        "option_d": "Arsenal",
+        "correct_answer": "C",
+        "difficulty": "medium",
+        "category": "Premier League"
+        },
+        {
+        "question_text": "Who won the Golden Boot at the 2002 World Cup?",
+        "option_a": "Ronaldo",
+        "option_b": "Klose",
+        "option_c": "Rivaldo",
+        "option_d": "Henry",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which club won Serie A in 2017?",
+        "option_a": "Juventus",
+        "option_b": "Roma",
+        "option_c": "Napoli",
+        "option_d": "Inter Milan",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Serie A"
+        },
+        {
+        "question_text": "Which nation won Euro 1984?",
+        "option_a": "France",
+        "option_b": "Spain",
+        "option_c": "Germany",
+        "option_d": "Portugal",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "Euro Cup"
+        },
+        {
+        "question_text": "Who is known as 'Der Kaiser'?",
+        "option_a": "Beckenbauer",
+        "option_b": "Klose",
+        "option_c": "Müller",
+        "option_d": "Lahm",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "Players"
+        },
+        {
+        "question_text": "Which club won the Europa League in 2022?",
+        "option_a": "Rangers",
+        "option_b": "Eintracht Frankfurt",
+        "option_c": "Sevilla",
+        "option_d": "Roma",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Europa League"
+        },
+        {
+        "question_text": "Which country hosted the 2002 World Cup?",
+        "option_a": "Japan",
+        "option_b": "South Korea",
+        "option_c": "China",
+        "option_d": "Japan and South Korea",
+        "correct_answer": "D",
+        "difficulty": "medium",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Who won the FIFA Best Men's Player award in 2019?",
+        "option_a": "Messi",
+        "option_b": "Van Dijk",
+        "option_c": "Ronaldo",
+        "option_d": "Mbappé",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Awards"
+        },
+        {
+        "question_text": "Which club is nicknamed 'La Vecchia Signora'?",
+        "option_a": "Inter Milan",
+        "option_b": "Juventus",
+        "option_c": "AC Milan",
+        "option_d": "Roma",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "Clubs"
+        },
+        {
+        "question_text": "Which team won the Copa América 2004?",
+        "option_a": "Argentina",
+        "option_b": "Brazil",
+        "option_c": "Uruguay",
+        "option_d": "Colombia",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Copa America"
+        },
+        {
+        "question_text": "Who scored the winning goal in the 2006 World Cup final?",
+        "option_a": "Pirlo",
+        "option_b": "Grosso",
+        "option_c": "Del Piero",
+        "option_d": "Totti",
+        "correct_answer": "B",
+        "difficulty": "hard",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which club did David Beckham join in 2003?",
+        "option_a": "PSG",
+        "option_b": "Real Madrid",
+        "option_c": "AC Milan",
+        "option_d": "LA Galaxy",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Transfers"
+        },
+        {
+        "question_text": "Which team won La Liga in 2016?",
+        "option_a": "Barcelona",
+        "option_b": "Atletico Madrid",
+        "option_c": "Real Madrid",
+        "option_d": "Sevilla",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "La Liga"
+        },
+        {
+        "question_text": "Who is England's all-time top scorer?",
+        "option_a": "Rooney",
+        "option_b": "Kane",
+        "option_c": "Lineker",
+        "option_d": "Charlton",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "Players"
+        },
+        {
+        "question_text": "Which club won the Champions League in 2006?",
+        "option_a": "Barcelona",
+        "option_b": "Arsenal",
+        "option_c": "AC Milan",
+        "option_d": "Liverpool",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "Champions League"
+        },
+        {
+        "question_text": "Which country won AFCON 2017?",
+        "option_a": "Cameroon",
+        "option_b": "Egypt",
+        "option_c": "Ghana",
+        "option_d": "Nigeria",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "AFCON"
+        },
+        {
+        "question_text": "Which club plays at Anfield?",
+        "option_a": "Liverpool",
+        "option_b": "Everton",
+        "option_c": "Leeds",
+        "option_d": "Newcastle",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Stadiums"
+        },
+        {
+        "question_text": "Which country won the Copa América 1999?",
+        "option_a": "Brazil",
+        "option_b": "Argentina",
+        "option_c": "Uruguay",
+        "option_d": "Chile",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "Copa America"
+        },
+        {
+        "question_text": "Which club won Ligue 1 in 2020?",
+        "option_a": "PSG",
+        "option_b": "Lyon",
+        "option_c": "Marseille",
+        "option_d": "Lille",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Ligue 1"
+        },
+        {
+        "question_text": "Who is known as 'The Special One'?",
+        "option_a": "Guardiola",
+        "option_b": "Ancelotti",
+        "option_c": "Mourinho",
+        "option_d": "Klopp",
+        "correct_answer": "C",
+        "difficulty": "easy",
+        "category": "Coaches"
+        },
+        {
+        "question_text": "Which country won the World Cup in 1990?",
+        "option_a": "Italy",
+        "option_b": "Germany",
+        "option_c": "Brazil",
+        "option_d": "Argentina",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which club won the Champions League in 2005?",
+        "option_a": "AC Milan",
+        "option_b": "Liverpool",
+        "option_c": "Chelsea",
+        "option_d": "Juventus",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Champions League"
+        },
+        {
+        "question_text": "Which team won the Premier League in 2012?",
+        "option_a": "Manchester United",
+        "option_b": "Manchester City",
+        "option_c": "Chelsea",
+        "option_d": "Arsenal",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "Premier League"
+        },
+        {
+        "question_text": "Who won the Ballon d'Or in 2015?",
+        "option_a": "Messi",
+        "option_b": "Ronaldo",
+        "option_c": "Neymar",
+        "option_d": "Suárez",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Awards"
+        },
+        {
+        "question_text": "Which country won Euro 1968?",
+        "option_a": "Italy",
+        "option_b": "Yugoslavia",
+        "option_c": "England",
+        "option_d": "France",
+        "correct_answer": "A",
+        "difficulty": "hard",
+        "category": "Euro Cup"
+        },
+        {
+        "question_text": "Which club won the Europa League in 2010?",
+        "option_a": "Atletico Madrid",
+        "option_b": "Fulham",
+        "option_c": "Sevilla",
+        "option_d": "Porto",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "Europa League"
+        },
+        {
+        "question_text": "Which club is nicknamed 'The Saints'?",
+        "option_a": "Southampton",
+        "option_b": "Leeds United",
+        "option_c": "Brighton",
+        "option_d": "Norwich",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Clubs"
+        },
+        {
+        "question_text": "Who won the Golden Ball at the 2002 World Cup?",
+        "option_a": "Ronaldo",
+        "option_b": "Kahn",
+        "option_c": "Rivaldo",
+        "option_d": "Ronaldinho",
+        "correct_answer": "B",
+        "difficulty": "hard",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which country won the Copa América 1995?",
+        "option_a": "Brazil",
+        "option_b": "Uruguay",
+        "option_c": "Argentina",
+        "option_d": "Chile",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Copa America"
+        },
+        {
+        "question_text": "Which club won Serie A in 2016?",
+        "option_a": "Napoli",
+        "option_b": "Roma",
+        "option_c": "Juventus",
+        "option_d": "Inter Milan",
+        "correct_answer": "C",
+        "difficulty": "easy",
+        "category": "Serie A"
+        },
+        {
+        "question_text": "Which player won the Golden Boot at Euro 2000?",
+        "option_a": "Henry",
+        "option_b": "Totti",
+        "option_c": "Shearer",
+        "option_d": "Kluivert",
+        "correct_answer": "D",
+        "difficulty": "hard",
+        "category": "Euro Cup"
+        },
+        {
+        "question_text": "Which club won the Champions League in 2004?",
+        "option_a": "Monaco",
+        "option_b": "Porto",
+        "option_c": "AC Milan",
+        "option_d": "Real Madrid",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Champions League"
+        },
+        {
+        "question_text": "Which country won the World Cup in 1938?",
+        "option_a": "Brazil",
+        "option_b": "Italy",
+        "option_c": "Germany",
+        "option_d": "France",
+        "correct_answer": "B",
+        "difficulty": "hard",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which club won the FA Cup in 2019?",
+        "option_a": "Chelsea",
+        "option_b": "Manchester City",
+        "option_c": "Watford",
+        "option_d": "Arsenal",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "FA Cup"
+        },
+        {
+        "question_text": "Who is Netherlands' all-time top scorer?",
+        "option_a": "Van Persie",
+        "option_b": "Kluivert",
+        "option_c": "Cruyff",
+        "option_d": "Bergkamp",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Players"
+        },
+        {
+        "question_text": "Which club is known as 'The Eagles'?",
+        "option_a": "Crystal Palace",
+        "option_b": "Tottenham",
+        "option_c": "Fulham",
+        "option_d": "Brentford",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Clubs"
+        },
+        {
+        "question_text": "Which player won the Ballon d'Or in 1998?",
+        "option_a": "Zidane",
+        "option_b": "Ronaldo",
+        "option_c": "Bergkamp",
+        "option_d": "Rivaldo",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "Awards"
+        },
+        {
+        "question_text": "Which club won the Champions League in 2003?",
+        "option_a": "Juventus",
+        "option_b": "AC Milan",
+        "option_c": "Real Madrid",
+        "option_d": "Manchester United",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Champions League"
+        },
+        {
+        "question_text": "Which country won the World Cup in 1926?",
+        "option_a": "Uruguay",
+        "option_b": "Italy",
+        "option_c": "Argentina",
+        "option_d": "Brazil",
+        "correct_answer": "A",
+        "difficulty": "hard",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which club is nicknamed 'The Red Devils'?",
+        "option_a": "Liverpool",
+        "option_b": "Manchester United",
+        "option_c": "AC Milan",
+        "option_d": "Benfica",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "Clubs"
+        },
+        {
+        "question_text": "Who won the Ballon d'Or in 2003?",
+        "option_a": "Nedvěd",
+        "option_b": "Henry",
+        "option_c": "Ronaldo",
+        "option_d": "Shevchenko",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "Awards"
+        },
+        {
+        "question_text": "Which country won Euro 1972?",
+        "option_a": "Germany",
+        "option_b": "Soviet Union",
+        "option_c": "Italy",
+        "option_d": "Netherlands",
+        "correct_answer": "A",
+        "difficulty": "hard",
+        "category": "Euro Cup"
+        },
+        {
+        "question_text": "Which club plays at Camp Nou?",
+        "option_a": "Barcelona",
+        "option_b": "Espanyol",
+        "option_c": "Valencia",
+        "option_d": "Sevilla",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Stadiums"
+        },
+        {
+        "question_text": "Who is Uruguay's all-time top scorer?",
+        "option_a": "Forlán",
+        "option_b": "Cavani",
+        "option_c": "Suárez",
+        "option_d": "Recoba",
+        "correct_answer": "C",
+        "difficulty": "easy",
+        "category": "Players"
+        },
+        {
+        "question_text": "Which team won the Premier League in 2011?",
+        "option_a": "Chelsea",
+        "option_b": "Manchester United",
+        "option_c": "Manchester City",
+        "option_d": "Arsenal",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Premier League"
+        },
+        {
+        "question_text": "Who won the Golden Boot at the 1998 World Cup?",
+        "option_a": "Batistuta",
+        "option_b": "Suker",
+        "option_c": "Ronaldo",
+        "option_d": "Klinsmann",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which club won Serie A in 2015?",
+        "option_a": "Roma",
+        "option_b": "Juventus",
+        "option_c": "Lazio",
+        "option_d": "Inter Milan",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "Serie A"
+        },
+        {
+        "question_text": "Which nation won Euro 1980?",
+        "option_a": "Germany",
+        "option_b": "Belgium",
+        "option_c": "Italy",
+        "option_d": "France",
+        "correct_answer": "A",
+        "difficulty": "hard",
+        "category": "Euro Cup"
+        },
+        {
+        "question_text": "Who is known as 'El Niño'?",
+        "option_a": "Torres",
+        "option_b": "Villa",
+        "option_c": "Iniesta",
+        "option_d": "Xavi",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Players"
+        },
+        {
+        "question_text": "Which club won the Europa League in 2014?",
+        "option_a": "Benfica",
+        "option_b": "Sevilla",
+        "option_c": "Valencia",
+        "option_d": "Chelsea",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Europa League"
+        },
+        {
+        "question_text": "Which country hosted the 1994 World Cup?",
+        "option_a": "USA",
+        "option_b": "Mexico",
+        "option_c": "Brazil",
+        "option_d": "Italy",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Who won the FIFA Best Men's Player award in 2020?",
+        "option_a": "Messi",
+        "option_b": "Lewandowski",
+        "option_c": "Ronaldo",
+        "option_d": "Neuer",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "Awards"
+        },
+        {
+        "question_text": "Which club is nicknamed 'The Lilywhites'?",
+        "option_a": "Fulham",
+        "option_b": "Tottenham",
+        "option_c": "Leeds",
+        "option_d": "Derby",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Clubs"
+        },
+        {
+        "question_text": "Which team won the Copa América 1993?",
+        "option_a": "Brazil",
+        "option_b": "Argentina",
+        "option_c": "Uruguay",
+        "option_d": "Colombia",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Copa America"
+        },
+        {
+        "question_text": "Who scored the winning goal in the 1998 World Cup final?",
+        "option_a": "Zidane",
+        "option_b": "Petit",
+        "option_c": "Djorkaeff",
+        "option_d": "Henry",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which club did Cristiano Ronaldo join in 2009?",
+        "option_a": "Juventus",
+        "option_b": "Manchester United",
+        "option_c": "Real Madrid",
+        "option_d": "Sporting CP",
+        "correct_answer": "C",
+        "difficulty": "easy",
+        "category": "Transfers"
+        },
+        {
+        "question_text": "Which team won La Liga in 2015?",
+        "option_a": "Barcelona",
+        "option_b": "Real Madrid",
+        "option_c": "Atletico Madrid",
+        "option_d": "Valencia",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "La Liga"
+        },
+        {
+        "question_text": "Who is Croatia's all-time top scorer?",
+        "option_a": "Mandzukic",
+        "option_b": "Perisic",
+        "option_c": "Suker",
+        "option_d": "Modric",
+        "correct_answer": "C",
+        "difficulty": "medium",
+        "category": "Players"
+        },
+        {
+        "question_text": "Which club won the Champions League in 2002?",
+        "option_a": "Bayer Leverkusen",
+        "option_b": "Real Madrid",
+        "option_c": "Juventus",
+        "option_d": "Barcelona",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Champions League"
+        },
+        {
+        "question_text": "Which country won AFCON 2004?",
+        "option_a": "Tunisia",
+        "option_b": "Cameroon",
+        "option_c": "Nigeria",
+        "option_d": "Senegal",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "AFCON"
+        },
+        {
+        "question_text": "Which club plays at the Allianz Arena?",
+        "option_a": "Bayern Munich",
+        "option_b": "RB Leipzig",
+        "option_c": "Stuttgart",
+        "option_d": "Leverkusen",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Stadiums"
+        },
+        {
+        "question_text": "Which country won the Copa América 1989?",
+        "option_a": "Argentina",
+        "option_b": "Brazil",
+        "option_c": "Uruguay",
+        "option_d": "Paraguay",
+        "correct_answer": "B",
+        "difficulty": "hard",
+        "category": "Copa America"
+        },
+        {
+        "question_text": "Which club won Ligue 1 in 2019?",
+        "option_a": "PSG",
+        "option_b": "Lyon",
+        "option_c": "Monaco",
+        "option_d": "Marseille",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Ligue 1"
+        },
+        {
+        "question_text": "Who is known as 'Captain Fantastic'?",
+        "option_a": "Gerrard",
+        "option_b": "Lampard",
+        "option_c": "Terry",
+        "option_d": "Rooney",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "Players"
+        },
+        {
+        "question_text": "Which country won the World Cup in 1962?",
+        "option_a": "Brazil",
+        "option_b": "Chile",
+        "option_c": "Germany",
+        "option_d": "Italy",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which club won the Champions League in 2001?",
+        "option_a": "Valencia",
+        "option_b": "Bayern Munich",
+        "option_c": "Real Madrid",
+        "option_d": "Liverpool",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Champions League"
+        },
+        {
+        "question_text": "Which team won the Premier League in 2005?",
+        "option_a": "Arsenal",
+        "option_b": "Chelsea",
+        "option_c": "Manchester United",
+        "option_d": "Liverpool",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Premier League"
+        },
+        {
+        "question_text": "Who won the Ballon d'Or in 2002?",
+        "option_a": "Ronaldo",
+        "option_b": "Roberto Carlos",
+        "option_c": "Kahn",
+        "option_d": "Zidane",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Awards"
+        },
+        {
+        "question_text": "Which country won Euro 1964?",
+        "option_a": "Spain",
+        "option_b": "Germany",
+        "option_c": "Italy",
+        "option_d": "France",
+        "correct_answer": "A",
+        "difficulty": "hard",
+        "category": "Euro Cup"
+        },
+        {
+        "question_text": "Which club won the Europa League in 2009?",
+        "option_a": "Shakhtar Donetsk",
+        "option_b": "Werder Bremen",
+        "option_c": "Hamburg",
+        "option_d": "CSKA Moscow",
+        "correct_answer": "A",
+        "difficulty": "hard",
+        "category": "Europa League"
+        },
+        {
+        "question_text": "Which club is nicknamed 'The Sky Blues'?",
+        "option_a": "Manchester City",
+        "option_b": "Coventry City",
+        "option_c": "Lazio",
+        "option_d": "Napoli",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Clubs"
+        },
+        {
+        "question_text": "Who won the Golden Ball at the 1998 World Cup?",
+        "option_a": "Zidane",
+        "option_b": "Ronaldo",
+        "option_c": "Suker",
+        "option_d": "Henry",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which country won the Copa América 1983?",
+        "option_a": "Brazil",
+        "option_b": "Argentina",
+        "option_c": "Uruguay",
+        "option_d": "Chile",
+        "correct_answer": "C",
+        "difficulty": "hard",
+        "category": "Copa America"
+        },
+        {
+        "question_text": "Which club won Serie A in 2014?",
+        "option_a": "Roma",
+        "option_b": "Juventus",
+        "option_c": "Napoli",
+        "option_d": "AC Milan",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "Serie A"
+        },
+        {
+        "question_text": "Which player won the Golden Boot at Euro 1996?",
+        "option_a": "Shearer",
+        "option_b": "Klinsmann",
+        "option_c": "Stoichkov",
+        "option_d": "Suker",
+        "correct_answer": "A",
+        "difficulty": "hard",
+        "category": "Euro Cup"
+        },
+        {
+        "question_text": "Which club won the Champions League in 2000?",
+        "option_a": "Valencia",
+        "option_b": "Real Madrid",
+        "option_c": "Manchester United",
+        "option_d": "Bayern Munich",
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "category": "Champions League"
+        },
+        {
+        "question_text": "Which country won the World Cup in 1930?",
+        "option_a": "Uruguay",
+        "option_b": "Argentina",
+        "option_c": "Brazil",
+        "option_d": "Italy",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "World Cup"
+        },
+        {
+        "question_text": "Which club won the FA Cup in 2018?",
+        "option_a": "Chelsea",
+        "option_b": "Manchester United",
+        "option_c": "Arsenal",
+        "option_d": "Tottenham",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "FA Cup"
+        },
+        {
+        "question_text": "Who is Belgium's all-time top scorer?",
+        "option_a": "Hazard",
+        "option_b": "Lukaku",
+        "option_c": "De Bruyne",
+        "option_d": "Fellaini",
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "category": "Players"
+        },
+        {
+        "question_text": "Which club is known as 'The Cottagers'?",
+        "option_a": "Fulham",
+        "option_b": "Brentford",
+        "option_c": "QPR",
+        "option_d": "Watford",
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "category": "Clubs"
+        },
+        {
+        "question_text": "Which player won the Ballon d'Or in 2004?",
+        "option_a": "Shevchenko",
+        "option_b": "Ronaldinho",
+        "option_c": "Henry",
+        "option_d": "Kaká",
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "category": "Awards"
+        }
 ]
 
 
