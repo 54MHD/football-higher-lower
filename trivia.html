@@ -152,7 +152,7 @@
     </footer>
 
     <script>
-      const API_BASE = '';
+      const API_BASE = 'https://football-quiz1.onrender.com';
 
       let currentQuestion = null;
       let score = 0;
@@ -355,13 +355,21 @@
         score = 0;
         streak = 0;
         bestStreak = 0;
-        askedIds = new Set();
+        askedIds.clear(); // Use .clear() instead of creating new Set
+        currentQuestion = null; // Reset current question
         gameOver = false;
         endScreen.classList.add('hidden');
         scoreEl.textContent = 'Score: 0';
         streakEl.textContent = 'Streak: 0';
         bestStreakEl.textContent = 'Best: 0';
         statusEl.textContent = 'Loading question...';
+        clearHighlights(); // Clear any previous highlights
+        lockUI(false); // Ensure UI is unlocked
+        
+        // Reset progress display
+        progressEl.textContent = 'Loading…';
+        
+        // Fetch fresh data
         fetchQuestionCount()
           .then(fetchRandomQuestion)
           .catch(() => {
@@ -370,8 +378,21 @@
           });
       }
 
-      // Start the game
-      resetGame();
+      // Initialize game on page load
+      function initGame() {
+        // Force complete reset of state
+        score = 0;
+        streak = 0;
+        bestStreak = 0;
+        askedIds = new Set();
+        currentQuestion = null;
+        gameOver = false;
+        
+        resetGame();
+      }
+
+      // Start the game when page loads
+      window.addEventListener('load', initGame);
     </script>
   </body>
 </html>
